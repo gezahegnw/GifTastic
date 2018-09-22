@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GifTastic</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <body>
+    <div class="container">
+      <h1>GifTastic</h1>
+        <!-- Rendered Buttons will get Dumped Here  -->
+      <div id="buttons-view"></div>
+    <form id="gif-form">
+     <!-- <div class="actor-button"> -->
+        <label for="iamge-input" class="add-actor">Add an Actor</label><br>
+        <input type="text" id="gif-input" placeholder="Enter Actor Name">
+        <br>
+        <!-- Button triggers new movie to be added -->
+        <input id="add-gifImage" type="submit" value="Submit" class="btn btn-default">
+        <!--<button type="button" class="btn btn-primary" id="add-gifImage">Submit</button>-->
+     <!-- </div> -->
+    </form>
+        <!-- Movies will Get Dumped Here -->
+      <div id="gifImage-view"></div>
+    </div>
+    <footer>
+      <div id="footer">
+        Created by Gezahegn Worku &#169;
+      </div>
+    </footer>
+          <script src="assets/javascript/logic.js"></script>     
+</body>
+</html>

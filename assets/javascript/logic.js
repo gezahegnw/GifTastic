@@ -8,9 +8,7 @@ $(document).ready(function(){
     
       function showImg() {
      $("#gifImage-view").empty();//this clrear out the page every whenever new button clicked
-     // var actorsGif = $(this).val().trim();
-     //$("#buttons-view").empty();
-     var actorsGif = $(this).attr("data-name");
+      var actorsGif = $(this).attr("data-name");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
          actorsGif + "&api_key=9HK85IyG19Q4BG1ecYP4dW7GCDsPvaKd&limit=" + numOfImgDisaplay ;
 
@@ -24,8 +22,6 @@ $(document).ready(function(){
   
      for(var j = 0; j < numOfImgDisaplay; j++) {    
       
-
-
         var gifdisplayDiv = $("<div>");
         gifdisplayDiv.addClass("image-div");
         var img = $("<img>");  // For each iteration, we will create an imageCrystals
@@ -51,9 +47,9 @@ $(document).ready(function(){
 
   
     function getButton(){ 
+ $("#buttons-view").empty();
 
-     $("#buttons-view").empty();//prefect place
-      for (var i = 0; i < topics.length; i++){
+  for (var i = 0; i < topics.length; i++){
 
           var newButton = $("<button>"); //this creats new button
           newButton.attr("class", "btn btn-default");//this adds class to new button
@@ -87,14 +83,13 @@ $(document).ready(function(){
 
     $("#add-gifImage").on("click", function(event){
       event.preventDefault();
-
       var actorsGif = $("#gif-input").val().trim();
         topics.push(actorsGif);
-        
+        $('#gif-input').val('');
+
         getButton();
 
-       return false;
-    
+      return false;
   });
    getButton();
 

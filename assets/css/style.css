@@ -1,3 +1,5 @@
+
+   
 body{
     background-color: rgb(170, 185, 171);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -25,6 +27,9 @@ img{
     margin-bottom: 10px;
     float: left;              
 } 
+img:hover{
+    background-color: #42b3f4;
+}
 .actor-button{
     float: right;
 }
@@ -46,4 +51,3 @@ img{
  #gifImage-view{
      margin-bottom: 300px;
  }
- 
